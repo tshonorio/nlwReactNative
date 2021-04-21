@@ -5,6 +5,7 @@ import {SafeAreaView,
         Image,
         TouchableOpacity,
         Dimensions,
+        View,
         } from 'react-native';
 
 import  wateringImg from '../assets/watering.png';
@@ -19,12 +20,14 @@ export function Welcome() {
         <SafeAreaView 
             style={styles.container}
         >
+            <View style={styles.wrapper}>
+
             <Text 
                 style={styles.title}
             >
                Gerencie {'\n'}
-               suas plantas {'\n'}
-               de forma fácil
+               suas plantas de {'\n'}
+               forma fácil
             </Text>
             
             <Image 
@@ -46,13 +49,14 @@ export function Welcome() {
             </Text>
 
             <TouchableOpacity style={styles.button} activeOpacity={0.7}>
-                <Text>
+                
                     <Feather 
                         name="chevron-right"
                         style={styles.buttonIcon}
                     />
-                </Text>
+               
             </TouchableOpacity>
+            </View>
 
         </SafeAreaView>
             
@@ -63,9 +67,14 @@ export function Welcome() {
 const styles = StyleSheet.create({
     container:{
         flex:1,
+
+    },
+    wrapper:{
+        flex:1,
         alignItems:'center',
         justifyContent:'space-around',
-
+        paddingHorizontal:20,
+        padding:10,
     },
 
     title:{
@@ -73,13 +82,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign:'center',
         color: colors.heading,
-        marginTop: 20,
-        paddingBottom:10,
+        marginTop: 30,
+       
     },
 
     subtitle:{
         textAlign:'center',
-        fontSize:22,
+        fontSize:18,
         paddingHorizontal:20,
         color: colors.heading,
        
@@ -87,7 +96,7 @@ const styles = StyleSheet.create({
 
     image:{
         
-        height: Dimensions.get('window').width*0.7,
+        height: Dimensions.get('window').width*0.6,
        
     },
 

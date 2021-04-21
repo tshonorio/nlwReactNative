@@ -1,9 +1,10 @@
 import React from 'react';
-import { Welcome } from './src/pages/Welcome';
+import { UserIdentification, } from './src/pages/UserIdentification';
+import AppLoading from 'expo-app-loading';
 export default function app(){
   return(
     
-    <Welcome/>
+    <UserIdentification/>
 
   )
 }
