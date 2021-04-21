@@ -37,6 +37,7 @@ export function UserIdentification(){
 
     }   
 
+
     return(
 
         <SafeAreaView style={styles.container}>  
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
        
         flex: 1,
         justifyContent:'center',
-        paddingHorizontal: 54,
+        paddingHorizontal: 53,
         alignItems:'center',
     },
     header: {
