@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/core';
 import React from 'react';
 import {
     SafeAreaView,
@@ -11,6 +12,11 @@ import colors from '../styles/colors';
 
 
 export function Confirmation(){
+    const navigation = useNavigation();
+    function handleStart(){
+        navigation.navigate('Welcome');
+    }
+    
 
     return (
         <SafeAreaView style={styles.container}>
@@ -29,7 +35,10 @@ export function Confirmation(){
             </View>
 
             <View style={styles.footer}>
-                <Button/>
+                <Button
+                    title="Começar"
+                    onPress={handleStart}
+                />
             </View>
 
         </SafeAreaView>
