@@ -1,10 +1,10 @@
 import React from 'react';
-import { UserIdentification, } from './src/pages/UserIdentification';
-import AppLoading from 'expo-app-loading';
+
+
+import Routes from './src/routes';
 export default function app(){
   return(
     
-    <UserIdentification/>
-
+    <Routes/>
   )
 }
