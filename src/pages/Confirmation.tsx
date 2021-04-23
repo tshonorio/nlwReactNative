@@ -13,8 +13,8 @@ import colors from '../styles/colors';
 
 export function Confirmation(){
     const navigation = useNavigation();
-    function handleStart(){
-        navigation.navigate('Welcome');
+    function handleMoveOn(){
+        navigation.navigate('PlantSelect');
     }
     
 
@@ -37,7 +37,7 @@ export function Confirmation(){
             <View style={styles.footer}>
                 <Button
                     title="Começar"
-                    onPress={handleStart}
+                    onPress={handleMoveOn}
                 />
             </View>
 
